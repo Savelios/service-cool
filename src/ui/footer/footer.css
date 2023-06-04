@@ -1,0 +1,97 @@
+.footer {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(9, 60, 88, 0.519);
+    bottom: 0;
+    left: 0;
+}
+
+.footer-logo {
+    position: relative;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgba(157, 181, 194, 0.871);
+    left: 10%;
+    width: 11%;
+    transition-duration: 0.2s;
+
+}
+
+.footer-logo:hover {
+    cursor: pointer;
+    color: rgba(201, 215, 223, 0.871);
+
+}
+
+.contacts-text {
+    position: relative;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(157, 181, 194, 0.871);
+    left: 32%;
+    transition-duration: 0.2s;
+}
+
+.order-btn {
+    position: relative;
+    margin-bottom: auto;
+    margin-top: auto;
+    border-radius: 5px;
+    color: rgba(157, 181, 194, 0.871);
+    left: 52%;
+    background-color: rgba(84, 136, 163, 0.519);
+    padding: 7px;
+    width: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: bn53bounce 4s infinite;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+.order-btn:hover {
+    background-color: rgba(121, 158, 176, 0.519);
+}
+
+@keyframes bn53bounce {
+
+    5%,
+    50% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1) rotate(-5deg);
+    }
+
+    25% {
+        transform: scale(1) rotate(5deg);
+    }
+
+    30% {
+        transform: scale(1) rotate(-3deg);
+    }
+
+    35% {
+        transform: scale(1) rotate(2deg);
+    }
+
+    40% {
+        transform: scale(1) rotate(0);
+    }
+}

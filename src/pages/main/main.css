@@ -1,0 +1,67 @@
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: rgb(5, 78, 113);
+    background: linear-gradient(90deg, rgba(5, 78, 113, 1) 0%, rgba(3, 112, 147, 1) 50%, rgba(5, 78, 113, 1) 100%);
+}
+
+.img-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    border-radius: 15px;
+    width: 40%;
+    height: 60%;
+    left: 29.5%;
+    top: 44.5%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(157, 181, 194, 0.342);
+}
+
+.text-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 40%;
+    height: 60%;
+    right: 10%;
+    top: 14.5%;
+    background-color: rgba(157, 181, 194, 0.086);
+}
+
+.text {
+    color: rgba(201, 215, 223, 0.871);
+    font-size: 0.95em;
+    padding: 2%;
+    transition-duration: 0.2s;
+}
+
+.text:hover {
+    color: rgba(217, 227, 232, 0.941);
+}
+
+.miner-logo {
+    margin-top: auto;
+    cursor: pointer;
+    margin-bottom: auto;
+    display: inline-block;
+    width: 53%;
+    height: 72%;
+    transition: 0.2s ease;
+}
+
+.miner-logo:hover {
+    size: 80px 80px;
+}

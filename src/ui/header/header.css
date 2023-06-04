@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(157, 181, 194, 0.086);
+    top: 0;
+    left: 0;
+}
+
+.header-logo {
+    margin-bottom: auto;
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgba(157, 181, 194, 0.871);
+    padding-left: 2%;
+    width: 11%;
+    transition-duration: 0.2s;
+}
+
+.header-logo:hover {
+    cursor: pointer;
+    color: rgba(201, 215, 223, 0.871);
+}
+
+.about-us-label {
+    margin-bottom: auto;
+    margin-top: auto;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-bottom: 5px;
+    color: rgba(157, 181, 194, 0.871);
+    text-decoration: underline;
+    left: 15%;
+    transition-duration: 0.2s;
+}
+
+.about-us-label:hover {
+    cursor: pointer;
+    color: rgba(201, 215, 223, 0.871);
+}
+
+.gallery-label {
+    margin-bottom: auto;
+    margin-top: auto;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-bottom: 5px;
+    color: rgba(157, 181, 194, 0.871);
+    text-decoration: underline;
+    left: 20%;
+    transition-duration: 0.2s;
+}
+
+.gallery-label:hover {
+    cursor: pointer;
+    color: rgba(201, 215, 223, 0.871);
+}
+
+.contacts-label {
+    margin-bottom: auto;
+    margin-top: auto;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-bottom: 5px;
+    color: rgba(157, 181, 194, 0.871);
+    text-decoration: underline;
+    left: 25%;
+    transition-duration: 0.2s;
+}
+
+.contacts-label:hover {
+    cursor: pointer;
+    color: rgba(201, 215, 223, 0.871);
+}
