@@ -21,12 +21,6 @@
     transition-duration: 0.2s;
 }
 
-.footer-text-logo:hover {
-    cursor: pointer;
-    color: rgba(201, 215, 223, 0.871);
-
-}
-
 .footer-img-logo {
     position: relative;
     margin-bottom: auto;
@@ -37,6 +31,17 @@
     transition-duration: 0.2s;
 }
 
+.footer-copy-rights {
+    position: relative;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(157, 181, 194, 0.871);
+    left: 3.5%;
+    transition-duration: 0.2s;
+}
+
 .contacts-text {
     position: relative;
     margin-bottom: auto;
@@ -44,7 +49,7 @@
     font-weight: 400;
     font-size: 1rem;
     color: rgba(157, 181, 194, 0.871);
-    left: 32%;
+    left: 18%;
     transition-duration: 0.2s;
 }
 
@@ -57,7 +62,7 @@
     background-color: rgba(109, 104, 120, 0.519);
     padding: 0.6%;
     width: 12%;
-    left: 53%;
+    left: 39%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     animation: bn53bounce 4s infinite;
     transition-duration: 0.2s;
