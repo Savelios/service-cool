@@ -34,6 +34,7 @@
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
+    overflow-x:hidden;
     border-radius: 15px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
