@@ -1,7 +1,7 @@
 .footer {
     background-color: rgba(9, 60, 88, 0.158);
     position: absolute;
-	z-index: 1;
+	z-index: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -33,7 +33,7 @@
 .footer-copy-rights {
 	text-align: center;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgba(157, 181, 194, 0.871);
     transition-duration: 0.2s;
 }
@@ -41,7 +41,7 @@
 .contacts-text {
     margin: 0 10% 0 5%;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgba(157, 181, 194, 0.871);
     transition-duration: 0.2s;
 }

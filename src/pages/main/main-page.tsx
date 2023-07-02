@@ -1,5 +1,5 @@
 import React from "react";
-import './main.css'
+import './main-page.css'
 import miner from '../../assets/miner.png'
 
 export function MainPage() {
@@ -7,7 +7,7 @@ export function MainPage() {
     return (
         <div className="main">
             <div className="img-container">
-                <img src={miner} className="miner-logo" alt="miner"/>
+                {/* <img src={miner} className="miner-logo" alt="miner"/> */}
             </div>
             <div className="text-container">
                 <p className="text">Погрузитесь в мир передовых технологий охлаждения с нашим водяным блоком "AquaCooler Pro".<br></br> <br></br> Разработанный для максимальной эффективности и производительности, этот блок предлагает непревзойденные возможности охлаждения для вашего ASIC-майнера.<br></br>

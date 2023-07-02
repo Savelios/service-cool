@@ -45,6 +45,8 @@
     color: rgba(157, 181, 194, 0.871);
     left: 15%;
     transition-duration: 0.2s;
+    letter-spacing: 1.981px;
+
 }
 
 .about-us-label:hover {
@@ -64,6 +66,8 @@
     color: rgba(157, 181, 194, 0.871);
     left: 20%;
     transition-duration: 0.2s;
+    letter-spacing: 1.981px;
+
 }
 
 .gallery-label:hover {
@@ -83,6 +87,8 @@
     color: rgba(157, 181, 194, 0.871);
     left: 25%;
     transition-duration: 0.2s;
+    letter-spacing: 1.981px;
+
 }
 
 .contacts-label:hover {

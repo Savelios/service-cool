@@ -2,7 +2,13 @@ import React from "react";
 import './footer.css'
 import logo from "../../assets/logo.png";
 
-export function Footer() {
+type FooterProps = {
+    route: string;
+    onOpenModal: () => void;
+    className?: string;
+};
+
+export const Footer: React.FC<FooterProps> = ({ route, onOpenModal, className }) => {
     return (
         <React.Fragment>
             <div className="footer">
@@ -10,7 +16,7 @@ export function Footer() {
                 <img src={logo} className="footer-img-logo" alt="logo" />
                 <h1 className="footer-copy-rights">2023 - Все права защищены.</h1>
                 <h1 className="contacts-text">п. Санамер ул. Микояна 162</h1>
-                <button className="order-btn">ЗАКАЗАТЬ</button>
+                <button className="order-btn" onClick={onOpenModal}>ЗАКАЗАТЬ</button>
             </div>
         </React.Fragment>
     );

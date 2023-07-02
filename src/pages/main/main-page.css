@@ -3,9 +3,6 @@
     width: 100%;
     height: 100vh;
     background: rgb(5, 78, 113);
-    /* background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% ); */
-    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% ); */
-    /* background-image: linear-gradient( 89.7deg,  rgba(0,0,0,1) -10.7%, rgba(53,92,125,1) 88.8% ); */
     background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
 }
 
@@ -43,6 +40,8 @@
     right: 10%;
     top: 14.5%;
     background-color: rgba(157, 181, 194, 0.086);
+    font-family: "Futura New";
+    font-size: 18px;
 }
 
 .text {

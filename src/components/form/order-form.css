@@ -1,0 +1,123 @@
+.main-order-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgba(63, 76, 119, 0.804) 70.2% ;
+backdrop-filter: blur(14px);
+width: 100vw;
+height: 100vh;
+}
+
+.order-container {
+    background-image: linear-gradient( 112.1deg,  rgba(32, 38, 57, 0.771) 11.4%, rgba(63, 76, 119, 0.804) 70.2% );
+    position: absolute;
+    top: 10%;
+    border-radius: 15px;
+    border: 1px solid #515276a8;
+        padding: 2%;
+}
+
+.close-form-button {
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    right: 15px;
+    top: 10px;
+    padding: 5px;
+}
+.close-form-button:hover {
+background: rgba(127, 123, 143, 0.238);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+}
+
+.order-title{
+    color: #ffffffb9;
+    font-family: "Futura New";
+    font-weight: 100;
+}
+
+.input-items-main-container {
+
+}
+
+.input-items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-prefix-label {
+    font-family: Futura New;
+margin: 8px;
+    color: #ffffff8e;
+    letter-spacing: 0.7px;
+
+}
+
+.name-prefix-label:placeholder-shown {
+color: white;
+}
+
+.phone-prefix-label {
+    position: relative;
+    left: 5px;
+    font-family: Futura New;
+margin: 8px;
+    color: #ffffff8e;
+    letter-spacing: 0.7px;
+
+}
+
+.form-order-button {
+    border-radius: 8px;
+    border-style: none;
+    padding: 10px;
+    margin: 10%;
+    font-size: 18px;
+    width: 250px;
+    color: #ffffffb9;
+    background: none;
+    border: 1px solid #ffffffb1;
+    cursor: pointer;
+    letter-spacing: 0.7px;
+    font-family: Futura New;
+}
+
+.form-order-button:hover {
+    color: #ffffffec;
+    background: rgba(127, 123, 143, 0.238);
+
+}
+
+.name-input {
+    color: #ffffff;
+    font-family: Futura New;
+    font-size: 22px;
+    letter-spacing: 0.7px;
+    width: 385px;
+    background: none;
+    border: 1px solid #ffffffb1;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.phone-input {
+    color: #ffffff;
+    font-family: Futura New;
+    font-size: 22px;
+    letter-spacing: 0.7px;
+    width: 385px;
+    background: none;
+    border: 1px solid #ffffffb1;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+}
