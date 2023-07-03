@@ -11,7 +11,7 @@ export function Header() {
             <div className="header">
                 <h1 className="header-text-logo" onClick={() => navigate('/main')}
                 >HYDRO MINIG</h1>
-                <img src={logo} className="header-img-logo" alt="logo" />
+                {/* <img src={logo} className="header-img-logo" alt="logo" /> */}
                 <label className="about-us-label" htmlFor="" onClick={() => navigate('/about')}
                 >О НАС</label>
                 <label className="gallery-label" htmlFor="" onClick={() => navigate('/gallery')}
