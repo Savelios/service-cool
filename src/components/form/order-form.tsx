@@ -11,7 +11,7 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
         <>
             <div className="main-order-container"  >
                 <div className="order-container">
-                    <img className="close-form-button" src={closeIcon} alt="" onClick={onCloseModal} />
+                    <img className="close-form-button" src={closeIcon} alt="" onClick={onCloseModal} /> 
                     <h2 className="order-title">Оставьте вашу заявку и мы с Вами обязательно свяжемся!</h2>
                     <div className="input-items-main-container">
                         <div className="input-items-container">

@@ -1,9 +1,27 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(64, 77, 120);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(114, 128, 173, 0.655);
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(55, 67, 107);
+}
+
 .main {
     display: flex;
     width: 100%;
     height: 100vh;
     background: rgb(5, 78, 113);
-    background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
 }
 
 .img-container {
@@ -22,7 +40,7 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-color: rgba(157, 181, 194, 0.342);
+    background-color: rgba(157, 181, 194, 0.1);
 }
 
 .text-container {
@@ -31,7 +49,7 @@
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
-    overflow-x:hidden;
+    overflow-x: hidden;
     border-radius: 15px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;

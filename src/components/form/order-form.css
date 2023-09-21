@@ -31,11 +31,11 @@
 }
 
 .close-form-button:hover {
-    background: rgba(127, 123, 143, 0.238);
+    background: rgba(127, 123, 143, 0.121);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 15%;
 }
 
 .order-title {
