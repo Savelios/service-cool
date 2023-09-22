@@ -18,18 +18,15 @@ export function Header() {
   };
 
   const handleDocumentClick = (e: MouseEvent) => {
-    // Проверяем, был ли клик вне меню
     if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-      setUnderlinedLabel(""); // Сбрасываем подчеркивание
+      setUnderlinedLabel("");
     }
   };
 
   useEffect(() => {
-    // Добавляем обработчик события для клика на документе
     document.addEventListener("click", handleDocumentClick);
 
     return () => {
-      // Удаляем обработчик события при размонтировании компонента
       document.removeEventListener("click", handleDocumentClick);
     };
   }, []);
@@ -38,7 +35,7 @@ export function Header() {
     <React.Fragment>
       <div className="header">
         <h1 className="header-text-logo" onClick={() => handleClick("/main")}>
-          HYDRO MINIG
+          HYDRO MINIG PRO
         </h1>
         <div ref={menuRef} className="menu-container">
           <label

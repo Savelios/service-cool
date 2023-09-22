@@ -1,111 +1,150 @@
 .footer {
-    background-color: rgba(9, 60, 88, 0.158);
-    position: absolute;
-	z-index: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-    height: 155px;
-	display: flex;
-	overflow: hidden;
-	align-items: center;
-	flex-direction: row;
-	justify-content: center;
+  background-color: rgba(9, 60, 88, 0.158);
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 155px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footer-text-logo {
-    margin-right: 10px;
-    margin-left: 5%;
-    position: relative;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: rgba(157, 181, 194, 0.871);
-    transition-duration: 0.2s;
+  margin-right: 10px;
+  margin-left: 5%;
+  position: relative;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgba(157, 181, 194, 0.871);
+  transition-duration: 0.2s;
 }
 
 .footer-img-logo {
-    color: rgba(157, 181, 194, 0.871);
-    width: 1%;
-    margin-right: 10px;
-    transition-duration: 0.2s;
+  color: rgba(157, 181, 194, 0.871);
+  width: 1%;
+  margin-right: 10px;
+  transition-duration: 0.2s;
 }
 
 .footer-copy-rights {
-	text-align: center;
-    font-weight: 400;
-    font-size: 1.2rem;
-    color: rgba(157, 181, 194, 0.871);
-    transition-duration: 0.2s;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: rgba(157, 181, 194, 0.871);
+  transition-duration: 0.2s;
 }
 
 .contacts-text {
-    margin: 0 10% 0 5%;
+  margin: 0 10% 0 5%;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: rgba(157, 181, 194, 0.871);
+  transition-duration: 0.2s;
+}
+
+.order-btn {
+  border-radius: 5px;
+  color: rgba(157, 181, 194, 0.871);
+  background-color: rgba(157, 181, 194, 0.342);
+  padding: 0.6%;
+  width: 190px;
+  margin-right: 5%;
+  font-family: "Futura New";
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: large;
+  animation: bn53bounce 4s infinite;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.order-btn:hover {
+  background-color: rgba(171, 168, 182, 0.349);
+}
+
+@keyframes bn53bounce {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1) rotate(-5deg);
+  }
+
+  25% {
+    transform: scale(1) rotate(5deg);
+  }
+
+  30% {
+    transform: scale(1) rotate(-3deg);
+  }
+
+  35% {
+    transform: scale(1) rotate(2deg);
+  }
+
+  40% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+@media (width < 500px) {
+  .contacts-text {
+    display: none;
+  }
+
+  .footer-text-logo {
+    display: none;
+  }
+
+  .footer {
+    background: rgb(5, 78, 113);
+    background-image: linear-gradient(
+      112.1deg,
+      rgba(32, 38, 57, 1) 11.4%,
+      rgb(63, 76, 119) 70.2%
+    );
+    position: unset;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 155px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .order-btn {
+  margin-right: 0;
+  margin-top: -8%;
+  position: absolute;
+  }
+
+  .footer-copy-rights {
+    position: relative;
+    width: 100%;
+    top: 25%;
+    left: 0%;
+    text-align: center;
     font-weight: 400;
     font-size: 1.2rem;
     color: rgba(157, 181, 194, 0.871);
     transition-duration: 0.2s;
 }
-
-.order-btn {
-    border-radius: 5px;
-    color: rgba(157, 181, 194, 0.871);
-    background-color: rgba(157, 181, 194, 0.342);
-    padding: 0.6%;
-    width: 190px;
-    margin-right: 5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    animation: bn53bounce 4s infinite;
-    transition-duration: 0.2s;
-    cursor: pointer;
-    border: none;
-}
-
-.order-btn:hover {
-    background-color: rgba(171, 168, 182, 0.349);
-}
-
-@keyframes bn53bounce {
-
-    5%,
-    50% {
-        transform: scale(1);
-    }
-
-    10% {
-        transform: scale(1);
-    }
-
-    15% {
-        transform: scale(1);
-    }
-
-    20% {
-        transform: scale(1) rotate(-5deg);
-    }
-
-    25% {
-        transform: scale(1) rotate(5deg);
-    }
-
-    30% {
-        transform: scale(1) rotate(-3deg);
-    }
-
-    35% {
-        transform: scale(1) rotate(2deg);
-    }
-
-    40% {
-        transform: scale(1) rotate(0);
-    }
-}
-
-@media (width < 500px) {
-    .contacts-text {
-        display: none;
-    }
-
-    .footer-text-logo {
-        display: none;
-    }
 }

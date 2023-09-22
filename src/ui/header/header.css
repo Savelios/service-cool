@@ -16,23 +16,13 @@
   font-size: 1.5rem;
   color: rgba(157, 181, 194, 0.871);
   padding-left: 2%;
-  width: 11%;
+  width: 20%;
   transition-duration: 0.2s;
 }
 
 .header-text-logo:hover {
   cursor: pointer;
   color: rgba(201, 215, 223, 0.871);
-}
-
-.header-img-logo {
-  margin-bottom: auto;
-  margin-top: auto;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: rgba(157, 181, 194, 0.871);
-  width: 1%;
-  transition-duration: 0.2s;
 }
 
 .menu-container {
@@ -49,7 +39,6 @@
   font-size: 1.1rem;
   border-bottom: 5px;
   color: rgba(157, 181, 194, 0.871);
-  left: 10%;
   transition-duration: 0.2s;
   letter-spacing: 1.981px;
 }
@@ -73,13 +62,11 @@
     justify-content: center;
     align-items: center;
   }
-  .about-us-label {
+  .menu-label {
     display: none;
   }
-  .gallery-label {
-    display: none;
-  }
-  .contacts-label {
+
+  .menu-container {
     display: none;
   }
 }
