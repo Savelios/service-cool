@@ -99,3 +99,13 @@
         transform: scale(1) rotate(0);
     }
 }
+
+@media (width < 500px) {
+    .contacts-text {
+        display: none;
+    }
+
+    .footer-text-logo {
+        display: none;
+    }
+}

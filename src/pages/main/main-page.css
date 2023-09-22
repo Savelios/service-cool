@@ -1,88 +1,100 @@
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(64, 77, 120);
+  background: rgb(64, 77, 120);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(114, 128, 173, 0.655);
-    border-radius: 10px;
-
+  background: rgba(114, 128, 173, 0.655);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(55, 67, 107);
+  background: rgb(55, 67, 107);
 }
 
 .main {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background: rgb(5, 78, 113);
-    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: rgb(5, 78, 113);
+  background-image: linear-gradient(
+    112.1deg,
+    rgba(32, 38, 57, 1) 11.4%,
+    rgba(63, 76, 119, 1) 70.2%
+  );
 }
 
 .img-container {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    border-radius: 15px;
-    width: 40%;
-    height: 60%;
-    left: 29.5%;
-    top: 44.5%;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    -webkit-transform: translate(-50%, -50%);
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 15px;
+  width: 40%;
+  height: 60%;
+  left: 9.5%;
+  top: 14.5%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  /* -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: rgba(157, 181, 194, 0.1);
+    -o-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
+  background-color: rgba(157, 181, 194, 0.1);
+
+  animation: backInLeft;
+  animation-duration: 2s;
 }
 
 .text-container {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    overflow-x: hidden;
-    border-radius: 15px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    width: 40%;
-    height: 60%;
-    right: 10%;
-    top: 14.5%;
-    background-color: rgba(157, 181, 194, 0.086);
-    font-family: "Futura New";
-    font-size: 24px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  overflow-x: hidden;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  width: 40%;
+  height: 60%;
+  right: 10%;
+  top: 14.5%;
+  background-color: rgba(157, 181, 194, 0.086);
+  font-family: "Futura New";
+  font-size: 24px;
+
+  animation: backInRight;
+  animation-duration: 2s;
 }
 
 .text {
-    color: rgba(201, 215, 223, 0.871);
-    font-size: 0.95em;
-    padding: 2%;
-    transition-duration: 0.2s;
+  color: rgba(201, 215, 223, 0.871);
+  font-size: 0.95em;
+  padding: 2%;
+  transition-duration: 0.2s;
 }
 
 .text:hover {
-    color: rgba(217, 227, 232, 0.941);
+  color: rgba(217, 227, 232, 0.941);
 }
 
 .miner-logo {
-    margin-top: auto;
-    cursor: pointer;
-    margin-bottom: auto;
-    display: inline-block;
-    width: 53%;
-    height: 72%;
-    transition: 0.2s ease;
+  margin-top: auto;
+  cursor: pointer;
+  margin-bottom: auto;
+  display: inline-block;
+  width: 53%;
+  height: 72%;
+  transition: 0.2s ease;
 }
 
 .miner-logo:hover {
-    size: 80px 80px;
+  size: 80px 80px;
 }

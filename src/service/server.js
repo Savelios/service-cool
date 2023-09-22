@@ -34,7 +34,7 @@ app.post("/send-message", limiter, async (req, res) => {
 
     res
       .status(200)
-      .json({ message: "Сообщение успешно отправлено в Telegram!" });
+      .json({ message: "Заявка успешно отправлена!" });
   } catch (error) {
     console.error(error);
     res

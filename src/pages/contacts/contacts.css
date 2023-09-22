@@ -24,8 +24,11 @@
     position: relative;
     background-color: rgba(157, 165, 194, 0.342);
     color: rgba(201, 215, 223, 0.871);
-    top: 13%;
+    top: 20%;
     border-radius: 15px;
+
+    animation: backInDown;
+    animation-duration: 1s;
 }
 
 .map-container {
