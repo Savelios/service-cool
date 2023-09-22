@@ -35,64 +35,35 @@
   transition-duration: 0.2s;
 }
 
-.about-us-label {
+.menu-container {
+  display: flex;
+  width: 100%;
+}
+
+.menu-label {
   margin-bottom: auto;
   margin-top: auto;
+  padding-left: 5%;
   position: relative;
   font-weight: 400;
   font-size: 1.1rem;
   border-bottom: 5px;
   color: rgba(157, 181, 194, 0.871);
-  left: 15%;
+  left: 10%;
   transition-duration: 0.2s;
   letter-spacing: 1.981px;
 }
 
-.about-us-label:hover {
+.menu-label:hover {
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 8px;
   color: rgba(201, 215, 223, 0.871);
 }
 
-.gallery-label {
-  margin-bottom: auto;
-  margin-top: auto;
-  position: relative;
-  font-weight: 400;
-  font-size: 1.1rem;
-  border-bottom: 5px;
-  color: rgba(157, 181, 194, 0.871);
-  left: 20%;
-  transition-duration: 0.2s;
-  letter-spacing: 1.981px;
-}
-
-.gallery-label:hover {
-  cursor: pointer;
+.underlined {
   text-decoration: underline;
   text-underline-offset: 8px;
-  color: rgba(201, 215, 223, 0.871);
-}
-
-.contacts-label {
-  margin-bottom: auto;
-  margin-top: auto;
-  position: relative;
-  font-weight: 400;
-  font-size: 1.1rem;
-  border-bottom: 5px;
-  color: rgba(157, 181, 194, 0.871);
-  left: 25%;
-  transition-duration: 0.2s;
-  letter-spacing: 1.981px;
-}
-
-.contacts-label:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 8px;
-  color: rgba(201, 215, 223, 0.871);
 }
 
 @media (width < 500px) {
