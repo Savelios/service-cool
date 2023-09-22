@@ -11,6 +11,8 @@ type ModalProps = {
 const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
   const [username, setUsername] = useState("");
   const [phonenumber, setPhonenumber] = useState("");
+  const [email, setEmail] = useState("");
+
   const [loading, setLoading] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
   const [responseClass, setResponseClass] = useState("");
@@ -27,6 +29,7 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
       const response = await axios.post("http://localhost:3001/send-message", {
         username,
         phonenumber,
+        email,
       });
 
       setResponseMessage(response.data.message);
@@ -108,6 +111,20 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
                   maxLength={36}
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
+                />
+                <label className="email-prefix-label" htmlFor="email">
+                  ПОЧТА
+                </label>
+                <input
+                  type="text"
+                  className="email-input"
+                  id="email"
+                  placeholder="E-mail"
+                  required
+                  minLength={10}
+                  maxLength={18}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <label className="phone-prefix-label" htmlFor="phone">
                   ТЕЛЕФОН

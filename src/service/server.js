@@ -17,9 +17,9 @@ app.use(bodyParser.json());
 
 app.post("/send-message", limiter, async (req, res) => {
   try {
-    const { username, phonenumber } = req.body;
+    const { username, email, phonenumber } = req.body;
 
-    const text = `Имя: ${username}\nТелефон: ${phonenumber}`;
+    const text = `Имя: ${username}\nПочта: ${email}\nТелефон: ${phonenumber}`;
 
     const TelegramBotToken = "6624470838:AAH25_vATb_RkmxpHq6ZAyqE25snmwprrwo";
     const TelegramChatId = "-4024471935";
@@ -32,9 +32,7 @@ app.post("/send-message", limiter, async (req, res) => {
       }
     );
 
-    res
-      .status(200)
-      .json({ message: "Заявка успешно отправлена!" });
+    res.status(200).json({ message: "Заявка успешно отправлена!" });
   } catch (error) {
     console.error(error);
     res

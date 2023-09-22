@@ -76,6 +76,15 @@
   letter-spacing: 0.7px;
 }
 
+.email-prefix-label {
+  position: relative;
+  left: 5px;
+  font-family: Futura New;
+  margin: 8px;
+  color: #ffffff8e;
+  letter-spacing: 0.7px;
+}
+
 .form-order-button {
   border-radius: 8px;
   border-style: none;
@@ -97,6 +106,19 @@
 }
 
 .name-input {
+  color: #ffffff;
+  font-family: Futura New;
+  font-size: 22px;
+  letter-spacing: 0.7px;
+  width: 385px;
+  background: none;
+  border: 1px solid #ffffffb1;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.email-input {
   color: #ffffff;
   font-family: Futura New;
   font-size: 22px;
