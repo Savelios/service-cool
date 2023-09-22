@@ -1,0 +1,2 @@
+    const TelegramBotToken = "6624470838:AAH25_vATb_RkmxpHq6ZAyqE25snmwprrwo";
+    const TelegramChatId = "-4024471935";
