@@ -29,7 +29,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/main" element={<MainPage />} />\
+        <Route path="/" element={<MainPage />} />\
         <Route path="/about" element={<AboutPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/contacts" element={<ContactsPage />} />

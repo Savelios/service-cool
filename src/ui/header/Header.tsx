@@ -34,7 +34,7 @@ export function Header() {
   return (
     <React.Fragment>
       <div className="header">
-        <h1 className="header-text-logo" onClick={() => handleClick("/main")}>
+        <h1 className="header-text-logo" onClick={() => handleClick("/")}>
           HYDRO MINIG
         </h1>
         <div ref={menuRef} className="menu-container">

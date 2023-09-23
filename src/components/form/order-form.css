@@ -160,6 +160,7 @@ a:focus {
   width: 100%;
   justify-content: center;
   display: flex;
+  color: #d68787b9;
 }
 
 .success {
@@ -169,6 +170,7 @@ a:focus {
 .error {
   color: #d68787b9;
 }
+
 
 .deactivate-button {
   border-radius: 8px;
