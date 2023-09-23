@@ -150,8 +150,6 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
                   id="input"
                   placeholder="E-mail"
                   required
-                  minLength={1}
-                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <label className="phone-prefix-label" htmlFor="phone">
@@ -162,9 +160,6 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
                   className="phone-input"
                   id="input"
                   placeholder="+7 ( - - - ) - - -  - -  - -"
-                  required
-                  minLength={10}
-                  maxLength={18}
                   value={phonenumber}
                   onChange={(e) => setPhonenumber(e.target.value)}
                 />
