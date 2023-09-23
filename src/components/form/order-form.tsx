@@ -121,8 +121,7 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
                   id="email"
                   placeholder="E-mail"
                   required
-                  minLength={10}
-                  maxLength={18}
+                  minLength={1}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
