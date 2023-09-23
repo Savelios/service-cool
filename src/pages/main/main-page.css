@@ -28,6 +28,7 @@
 }
 
 .img-container {
+  padding: 0 15px 0 15px;
   display: flex;
   position: absolute;
   overflow: hidden;
@@ -37,22 +38,18 @@
   border-radius: 15px;
   width: 40%;
   height: 60%;
-  left: 9.5%;
+  left: 7%;
   top: 14.5%;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-  /* -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%); */
-  /* transform: translate(-50%, -50%); */
   background-color: rgba(157, 181, 194, 0.1);
-
   animation: backInLeft;
   animation-duration: 2s;
+  user-select: none;
 }
 
 .text-container {
+  user-select: none;
   display: flex;
   position: absolute;
   justify-content: center;
@@ -91,12 +88,40 @@
   margin-bottom: auto;
   display: inline-block;
   width: 53%;
-  height: 72%;
   transition: 0.2s ease;
 }
 
 .miner-logo:hover {
   size: 80px 80px;
+}
+
+.previus-btn {
+  right: 10%;
+}
+
+.next-btn {
+  left: 10%;
+}
+
+#btn {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  color: rgba(157, 181, 194, 0.871);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 200px;
+  top: 45%;
+  height: 0;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#btn:hover {
+  color: rgba(197, 195, 206, 0.151);
+  transition-duration: 0.2s;
 }
 
 @media (width < 500px) {
@@ -105,12 +130,12 @@
   }
 
   .img-container {
-    position: relative; 
+    position: relative;
     width: 90%;
-    height: 60%;
+    height: 100%;
     left: 0%;
     top: 0%;
-    margin: 0; 
+    margin: 0;
     margin-top: 30%;
     margin-bottom: 2%;
     border-top-right-radius: 15px;
@@ -123,7 +148,7 @@
     border-top-right-radius: 0px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    position: relative; 
+    position: relative;
     margin-bottom: 8%;
     width: 90%;
     height: 100%;
@@ -135,5 +160,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .miner-logo {
+    width: 80%;
   }
 }
