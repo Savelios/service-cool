@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./order-form.css";
 import closeIcon from "../../assets/close-form-btn.png";
 import axios from "axios";
@@ -18,8 +18,8 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
   const [responseClass, setResponseClass] = useState("");
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [buttonClass, setButtonClass] = useState("");
-  const [countdown, setCountdown] = useState(60); // Обратный отсчет
-  const [successMessage, setSuccessMessage] = useState(""); // Добавляем состояние для сообщения об успешной отправке
+  const [countdown, setCountdown] = useState(60);
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -49,7 +49,7 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
         setResponseMessage(response.data.message);
         setButtonClass("deactivate-button");
         setResponseClass("error");
-        setCountdown(60); // Сбросить обратный отсчет при ошибке
+        setCountdown(60);
       }
     } catch (error) {
       console.error(error);
@@ -65,7 +65,6 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
   };
 
   useEffect(() => {
-    // Обновление обратного отсчета каждую секунду
     const timer = setInterval(() => {
       if (countdown > 0 && responseClass === "error") {
         setCountdown(countdown - 1);
@@ -141,8 +140,8 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
                 />
                 <button
                   type="submit"
-                  disabled={loading || isButtonDisabled} // Добавляем проверку на isButtonDisabled
-                  className={`form-order-button ${buttonClass}`} // Применяем дополнительный класс
+                  disabled={loading || isButtonDisabled}
+                  className={`form-order-button ${buttonClass}`}
                 >
                   Оставить заявку
                 </button>
@@ -153,7 +152,7 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
             <p className={`response-msg ${responseClass}`}>
               {responseMessage}{" "}
               {responseClass === "error" && `через ${countdown} сек.`}
-              {successMessage} {/* Отображаем сообщение об успешной отправке */}
+              {successMessage}
             </p>
           )}{" "}
         </div>
