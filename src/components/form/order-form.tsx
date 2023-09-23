@@ -104,7 +104,7 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
                 <input
                   type="text"
                   className="name-input"
-                  id="uname"
+                  id="input"
                   placeholder="ФИО"
                   required
                   minLength={2}
@@ -118,7 +118,7 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
                 <input
                   type="text"
                   className="email-input"
-                  id="email"
+                  id="input"
                   placeholder="E-mail"
                   required
                   minLength={1}
@@ -131,7 +131,7 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
                 <input
                   type="text"
                   className="phone-input"
-                  id="phone"
+                  id="input"
                   placeholder="+7 ( - - - ) - - -  - -  - -"
                   required
                   minLength={10}

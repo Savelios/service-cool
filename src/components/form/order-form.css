@@ -1,3 +1,8 @@
+*,
+a:focus {
+  outline: none !important;
+}
+
 .main-order-container {
   display: flex;
   justify-content: center;
@@ -48,6 +53,7 @@
   color: #ffffffb9;
   font-family: "Futura New";
   font-weight: 100;
+  margin: 5% 0 5% 0;
 }
 
 .input-items-container {
@@ -129,6 +135,10 @@
   border-radius: 8px;
   padding: 10px;
   margin: 5px;
+}
+
+#input::placeholder {
+  color: #ffffff8e;
 }
 
 .phone-input {

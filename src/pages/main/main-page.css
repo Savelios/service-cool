@@ -1,3 +1,14 @@
+html, body{
+  height: 100%;
+  border: 0px;
+  overflow-x:hidden;
+}
+
+*{
+  margin:0;
+}
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }
