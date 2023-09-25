@@ -32,6 +32,11 @@ a:focus {
   animation-duration: 0.3s;
 }
 
+.zoomOut {
+  animation: zoomOut 0.3s;
+  animation-duration: 0.3s;
+}
+
 .close-form-button {
   position: absolute;
   cursor: pointer;

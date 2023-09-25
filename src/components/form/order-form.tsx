@@ -111,6 +111,17 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
     };
   }, [countdown, responseClass]);
 
+
+  const handleCloseModal = () => {
+    const orderContainer = document.querySelector(".order-container");
+    if (orderContainer) {
+      orderContainer.classList.add("zoomOut");
+    }
+    setTimeout(() => {
+      onCloseModal();
+    }, 200);
+  };
+
   return (
     <>
       <div className="main-order-container">
@@ -120,7 +131,7 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
               className="close-form-button"
               src={closeIcon}
               alt=""
-              onClick={onCloseModal}
+              onClick={handleCloseModal}
             />
             <h2 className="order-title">
               Оставьте вашу заявку и мы с Вами обязательно свяжемся!
