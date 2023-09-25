@@ -176,7 +176,6 @@ a:focus {
   color: #d68787b9;
 }
 
-
 .deactivate-button {
   border-radius: 8px;
   border-style: none;
@@ -194,4 +193,29 @@ a:focus {
 .deactivate-button:hover {
   color: #000000b9;
   background: #8080808a;
+}
+@media (width < 500px) {
+  #input {
+    width: 300px;
+  }
+
+  .order-title {
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .close-form-button {
+    position: unset;
+    width: 30px;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+
+  .order-container {
+    margin: 10px;
+  }
+
+  .form-order-button {
+    margin: 13% 10% 13% 10%;
+  }
 }

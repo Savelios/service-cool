@@ -6,8 +6,8 @@ import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 
 export function ContactsPage() {
     const defaultState = {
-        center: [44.070568, 42.850331],
-        zoom: 15,
+        center: [44.0455121, 42.8575232],
+        zoom: 10,
     };
 
     return (
@@ -16,7 +16,7 @@ export function ContactsPage() {
                 <div className="map-container">
                     <YMaps>
                         <Map defaultState={defaultState} width={390} height={240} >
-                            <Placemark geometry={[44.070568, 42.850331]} />
+                            <Placemark geometry={[44.0455121, 42.8575232]} />
                         </Map>
                     </YMaps>
                 </div>

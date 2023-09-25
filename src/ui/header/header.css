@@ -69,4 +69,23 @@
   .menu-container {
     display: none;
   }
+
+  .header {
+    background-image: linear-gradient(
+      112.1deg,
+      rgba(32, 38, 57, 1) 11.4%,
+      rgb(63, 76, 119) 70.2%
+    );
+    position: unset;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 75px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
