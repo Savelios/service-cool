@@ -26,6 +26,86 @@ body {
   background: rgb(55, 67, 107);
 }
 
+.image-transition-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.image-transition-enter-done {
+  width: 100%;
+  align-items: center;
+}
+
+.image-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.image-transition-exit {
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.image-transition-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.image-wrapper {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transform: translateX(calc(-50% + var(--touch-move-x, 0px)));
+  transition: transform 0.3s ease;
+}
+
+.image-transition-swipe-left-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.image-transition-swipe-left-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 1000ms, transform 300ms;
+}
+
+.image-transition-swipe-left-exit {
+  opacity: 0;
+  transform: translateX(0%);
+}
+
+.image-transition-swipe-left-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.image-transition-swipe-right-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.image-transition-swipe-right-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 1000ms, transform 300ms;
+}
+
+.image-transition-swipe-right-exit {
+  opacity: 0;
+  transform: translateX(0%);
+}
+
+.image-transition-swipe-right-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
 .main {
   display: flex;
   width: 100%;
@@ -107,23 +187,25 @@ body {
 }
 
 .previus-btn {
-  right: 10%;
+  top: 45%;
+  left: 0%;
+  position: relative;
 }
 
 .next-btn {
-  left: 10%;
+  top: 45%;
+  right: 0%;
+  position: relative;
 }
 
 #btn {
   display: flex;
   padding: 0;
   margin: 0;
-  position: relative;
   color: rgba(157, 181, 194, 0.871);
   cursor: pointer;
   text-decoration: none;
   font-size: 200px;
-  top: 45%;
   height: 0;
   justify-content: center;
   align-items: center;
@@ -191,20 +273,19 @@ body {
 
   .miner-logo {
     width: 80%;
-    position: absolute;
   }
 
   .next-btn {
-    left: 38%;
+    right: 0%;
+    top: 0%;
+    position: relative;
   }
 
   .previus-btn {
-    right: 38%;
-  }
-
-  #btn {
-    top: 0;
-    margin-bottom: 8%;
+    right: 0%;
+    top: 0%;
+    position: relative;
+    z-index: 1;
   }
 }
 
