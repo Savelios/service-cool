@@ -219,19 +219,18 @@ body {
 
 @media (width < 500px) {
   .main {
-    display: flex;
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
+    height: unset;
+    width: unset;
+    display: block;
   }
 
   .content-container {
     min-width: 100%;
     min-height: 100%;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .img-container {
@@ -239,13 +238,13 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 90%;
-    min-height: 48%;
+    width: 93%;
+    min-height: 350px;
     left: 0%;
     top: 0%;
     margin: 0;
     margin-top: 5%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -256,10 +255,10 @@ body {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-top: 0%;
-    /* width: 98%;
-    height: 100%; */
+    min-width: 100%;
+    min-height: 100%;
     right: 0%;
     top: 0%;
 
