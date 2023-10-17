@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./header.css";
 import { useNavigate } from "react-router-dom";
+import burger from '../../assets/burger.png'
 
 export function Header() {
   const navigate = useNavigate();
@@ -63,6 +64,7 @@ export function Header() {
             КОНТАКТЫ
           </label>
         </div>
+        <img className="header-burger" src={burger} alt="" />
       </div>
     </React.Fragment>
   );
