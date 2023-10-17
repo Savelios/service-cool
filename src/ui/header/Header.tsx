@@ -40,9 +40,9 @@ export function Header() {
         <div ref={menuRef} className="menu-container">
           <label
             className={`menu-label ${
-              underlinedLabel === "about" ? "underlined" : ""
+              underlinedLabel === "" ? "underlined" : ""
             }`}
-            onClick={() => handleLabelClick("about")}
+            onClick={() => handleLabelClick("")}
           >
             О НАС
           </label>

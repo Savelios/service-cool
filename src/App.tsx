@@ -8,7 +8,6 @@ import "./assets/fonts/fonts.css";
 import "./index.css";
 import "./assets/fonts/FuturaNewLight-Reg.woff";
 import "./assets/fonts/FuturaNewLight-Reg.ttf";
-import { AboutPage } from './pages/about/about-page';
 import { GalleryPage } from './pages/gallery/gallery-page';
 import { GalleryView } from './components/view/gallery/gallery-view';
 import { AboutView } from './components/view/about/about-view';
@@ -30,7 +29,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<MainPage />} />\
-        <Route path="/about" element={<AboutPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
         {/* Views */}

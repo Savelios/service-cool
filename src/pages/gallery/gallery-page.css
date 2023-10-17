@@ -3,5 +3,14 @@
     width: 100%;
     height: 100vh;
     background: rgb(5, 78, 113);
-    background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-container {
+    width: 90%;
+    height: 60%;
+    background-color: rgba(157, 181, 194, 0.086);
+    border-radius: 12px;
 }

@@ -3,7 +3,9 @@ export function GalleryPage() {
   
     return (
         <div className="gallery-page-container">
-
+            <div className="gallery-container">
+                
+            </div>
         </div>
     );
 }
