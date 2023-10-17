@@ -58,7 +58,7 @@
 .contacts-phone-label {
 }
 
-@media (width <= 750px) {
+@media (width <= 1000px) {
   .contacts-container {
     top: 0;
   }

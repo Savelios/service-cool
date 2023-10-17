@@ -55,7 +55,7 @@
   text-underline-offset: 8px;
 }
 
-@media (width < 500px) {
+@media (width < 1000px) {
   .header-text-logo {
     display: flex;
     width: 100%;
