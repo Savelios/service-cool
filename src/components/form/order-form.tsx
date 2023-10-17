@@ -24,14 +24,11 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
   const [successMessage, setSuccessMessage] = useState("");
 
   const isValidEmail = (value: string) => {
-    // Регулярное выражение для проверки email
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(value);
   };
 
-  // Функция для проверки валидности номера телефона
   const isValidPhoneNumber = (value: string) => {
-    // Регулярное выражение для проверки номера телефона в формате "+7 (123) 456-7890"
     const phonePattern = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
     return phonePattern.test(value);
   };
@@ -40,7 +37,6 @@ const OrderForm: React.FC<ModalProps> = ({ onCloseModal }) => {
     e.preventDefault();
     setLoading(true);
 
-    // Проверка валидности email и номера телефона
     if (!isValidEmail(email)) {
       setResponseMessage("Неправильный формат email.");
       setValidationRespone("validation-msg");

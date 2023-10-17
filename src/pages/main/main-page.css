@@ -31,27 +31,27 @@ body {
   transform: translateX(100%);
 }
 
-.image-transition-enter-done {
+/* .image-transition-enter-done {
   width: 100%;
   align-items: center;
-}
+} */
 
-.image-transition-enter-active {
+/* .image-transition-enter-active {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
-}
+  transition: opacity 1000ms, transform 3000ms;
+} */
 
 .image-transition-exit {
   opacity: 0;
   transform: translateX(0);
 }
 
-.image-transition-exit-active {
+/* .image-transition-exit-active {
   opacity: 0;
   transform: translateX(-100%);
   transition: opacity 300ms, transform 300ms;
-}
+} */
 
 .image-wrapper {
   width: 100%;
@@ -67,44 +67,44 @@ body {
   transform: translateX(-100%);
 }
 
-.image-transition-swipe-left-enter-active {
+/* .image-transition-swipe-left-enter-active {
   opacity: 1;
   transform: translateX(0%);
   transition: opacity 1000ms, transform 300ms;
-}
+} */
 
 .image-transition-swipe-left-exit {
   opacity: 0;
   transform: translateX(0%);
 }
 
-.image-transition-swipe-left-exit-active {
+/* .image-transition-swipe-left-exit-active {
   opacity: 0;
   transform: translateX(-100%);
   transition: opacity 300ms, transform 300ms;
-}
+} */
 
 .image-transition-swipe-right-enter {
   opacity: 0;
   transform: translateX(100%);
 }
 
-.image-transition-swipe-right-enter-active {
+/* .image-transition-swipe-right-enter-active {
   opacity: 1;
   transform: translateX(0%);
   transition: opacity 1000ms, transform 300ms;
-}
+} */
 
 .image-transition-swipe-right-exit {
   opacity: 0;
   transform: translateX(0%);
 }
 
-.image-transition-swipe-right-exit-active {
+/* .image-transition-swipe-right-exit-active {
   opacity: 0;
   transform: translateX(100%);
   transition: opacity 300ms, transform 300ms;
-}
+} */
 
 .main {
   display: flex;
