@@ -217,7 +217,7 @@ body {
   transition-duration: 0.2s;
 }
 
-@media (width < 500px) {
+@media (width <= 750px) {
   .main {
     height: unset;
     width: unset;
