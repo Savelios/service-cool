@@ -128,7 +128,7 @@
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
   }
   .order-btn {
     position: relative;
