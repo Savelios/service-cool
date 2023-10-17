@@ -102,7 +102,7 @@
   }
 }
 
-@media (max-width <= 768)  {
+@media (width < 1000px) {
   .contacts-text {
     display: none;
   }
