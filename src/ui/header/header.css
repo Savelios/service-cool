@@ -65,9 +65,10 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin-left: 15%;
   }
   .menu-label {
-    display: block;
+    width: 60%;
     margin: 10%;
     font-size: 2.7rem;
     background-color: rgba(207, 207, 207, 0.295);
@@ -75,7 +76,9 @@
     padding: 3% 15%;
     justify-content: center;
     align-items: center;
+    display: flex;
   }
+
 
   .menu-container {
     position: absolute;
@@ -87,8 +90,7 @@
   }
 
   .underlined {
-    text-decoration: underline;
-    text-underline-offset: 8px;
+    text-decoration: none
 }
 
   .header {

@@ -40,6 +40,11 @@ export function Header() {
     setIsModalOpen(true); // Открыть модальное окно при нажатии на бургер
     setIsMenuVisible(false); // Скрыть меню-контейнер
   }
+
+  const handleMenuLabelClick = () => {
+    setIsModalOpen(false); // Закрыть модальное окно при клике на menu label
+  }
+  
   return (
     <React.Fragment>
       <div className="header">
@@ -51,20 +56,28 @@ export function Header() {
           <div ref={menuRef} className="menu-container">
             <label
               className={`menu-label ${underlinedLabel === "" ? "underlined" : ""}`}
-              onClick={() => handleLabelClick("")}
+              onClick={() => {
+                handleLabelClick("");
+                handleMenuLabelClick(); 
+              }}              
             >
               О НАС
             </label>
             <label
               className={`menu-label ${underlinedLabel === "gallery" ? "underlined" : ""}`}
-              onClick={() => handleLabelClick("gallery")}
+              onClick={() => {
+                handleLabelClick("gallery");
+                handleMenuLabelClick(); 
+              }}
             >
               ГАЛЕРЕЯ
             </label>
             <label
               className={`menu-label ${underlinedLabel === "contacts" ? "underlined" : ""}`}
-              onClick={() => handleLabelClick("contacts")}
-            >
+              onClick={() => {
+                handleLabelClick("contacts");
+                handleMenuLabelClick(); 
+              }}            >
               КОНТАКТЫ
             </label>
           </div>

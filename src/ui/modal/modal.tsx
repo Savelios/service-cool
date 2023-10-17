@@ -1,5 +1,7 @@
 import React from "react";
 import './modal.css'
+import closeIcon from "../../assets/close-form-btn.png";
+
 
 interface ModalProps {
     isOpen: boolean;
@@ -16,7 +18,7 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
         <div className="modal">
             <div className="modal-content">
                 {children}
-                <button onClick={onClose}>Закрыть</button>
+                <img className="close-modal-btn" src={closeIcon} onClick={onClose} alt="" />
             </div>
         </div>
     )
