@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./header.css";
 import { useNavigate } from "react-router-dom";
 import burger from '../../assets/burger.png'
+import { Modal } from "../modal/modal";
 
 export function Header() {
   const navigate = useNavigate();
@@ -32,39 +33,42 @@ export function Header() {
     };
   }, []);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMenuVisible, setIsMenuVisible] = useState(true);
+
+  const handleBurgerClick = () => {
+    setIsModalOpen(true); // Открыть модальное окно при нажатии на бургер
+    setIsMenuVisible(false); // Скрыть меню-контейнер
+  }
   return (
     <React.Fragment>
       <div className="header">
         <h1 className="header-text-logo" onClick={() => handleClick("/")}>
           HYDRO MINIG
         </h1>
-        <div ref={menuRef} className="menu-container">
-          <label
-            className={`menu-label ${
-              underlinedLabel === "" ? "underlined" : ""
-            }`}
-            onClick={() => handleLabelClick("")}
-          >
-            О НАС
-          </label>
-          <label
-            className={`menu-label ${
-              underlinedLabel === "gallery" ? "underlined" : ""
-            }`}
-            onClick={() => handleLabelClick("gallery")}
-          >
-            ГАЛЕРЕЯ
-          </label>
-          <label
-            className={`menu-label ${
-              underlinedLabel === "contacts" ? "underlined" : ""
-            }`}
-            onClick={() => handleLabelClick("contacts")}
-          >
-            КОНТАКТЫ
-          </label>
-        </div>
-        <img className="header-burger" src={burger} alt="" />
+        <img className="header-burger" src={burger} alt="" onClick={handleBurgerClick} />
+        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+          <div ref={menuRef} className="menu-container">
+            <label
+              className={`menu-label ${underlinedLabel === "" ? "underlined" : ""}`}
+              onClick={() => handleLabelClick("")}
+            >
+              О НАС
+            </label>
+            <label
+              className={`menu-label ${underlinedLabel === "gallery" ? "underlined" : ""}`}
+              onClick={() => handleLabelClick("gallery")}
+            >
+              ГАЛЕРЕЯ
+            </label>
+            <label
+              className={`menu-label ${underlinedLabel === "contacts" ? "underlined" : ""}`}
+              onClick={() => handleLabelClick("contacts")}
+            >
+              КОНТАКТЫ
+            </label>
+          </div>
+        </Modal>
       </div>
     </React.Fragment>
   );
