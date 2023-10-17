@@ -55,7 +55,7 @@
 
 .contacts-phone-label {}
 
-@media (width <=1000px) {
+@media (max-width <= 768) {
   .contacts-container {
     top: 0;
     margin: 20%;

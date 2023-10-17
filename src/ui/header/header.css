@@ -59,7 +59,7 @@
   display: none;
 }
 
-@media (width < 1000px) {
+@media (max-width <= 768)  {
   .header-text-logo {
     display: flex;
     width: 100%;
